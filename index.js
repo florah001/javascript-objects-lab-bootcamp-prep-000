@@ -17,10 +17,6 @@ function deleteFromObjectByKey(object, key) {
    delete prop[1];
     return obj;
 }
-function deleteFromObjectByKey(object, key) {
-   delete object[key];
-    return object;    
-}
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
   object[key] = value;
         return object;
