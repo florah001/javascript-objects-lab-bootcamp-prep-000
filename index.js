@@ -12,7 +12,6 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
   return  { prop: 1, prop2: 2 };
 }
 function deleteFromObjectByKey(object, key) {
-  var obj = { prop: 1 }
   var newObj = Object.assign({}, object)
     return obj;
 }
@@ -32,7 +31,11 @@ function destructivelyDeleteFromObjectByKey(object, key) {
 
 
 /*
-
+function deleteFromObjectByKey(object, key) {
+  var obj = { prop: 1 }
+  var newObj = Object.assign({}, object)
+    return obj;
+}
     
   1) Objects updateObjectWithKeyAndValue(object, key, value) returns an object with the orignal key value pairs and the new key value pair:
      ReferenceError: updateObjectWithKeyAndValue is not defined
